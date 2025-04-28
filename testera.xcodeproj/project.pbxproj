@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		11C02E972DBFC3F500B036E1 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C02E962DBFC3F500B036E1 /* AuthenticationServices.framework */; };
+		11C02EA22DBFC3F500B036E1 /* credprovider.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 11C02E942DBFC3F400B036E1 /* credprovider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		11C02E6D2DBFB85200B036E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +26,46 @@
 			remoteGlobalIDString = 11C02E5A2DBFB85000B036E1;
 			remoteInfo = testera;
 		};
+		11C02EA02DBFC3F500B036E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11C02E532DBFB85000B036E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11C02E932DBFC3F400B036E1;
+			remoteInfo = credprovider;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11C02EA72DBFC3F500B036E1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				11C02EA22DBFC3F500B036E1 /* credprovider.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11C02E5B2DBFB85000B036E1 /* testera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C02E6C2DBFB85200B036E1 /* testeraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testeraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C02E762DBFB85200B036E1 /* testeraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testeraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C02E942DBFC3F400B036E1 /* credprovider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = credprovider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C02E962DBFC3F500B036E1 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		11C02EA32DBFC3F500B036E1 /* Exceptions for "credprovider" folder in "credprovider" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 11C02E932DBFC3F400B036E1 /* credprovider */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		11C02E5D2DBFB85000B036E1 /* testera */ = {
@@ -43,6 +81,14 @@
 		11C02E792DBFB85200B036E1 /* testeraUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = testeraUITests;
+			sourceTree = "<group>";
+		};
+		11C02E982DBFC3F500B036E1 /* credprovider */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				11C02EA32DBFC3F500B036E1 /* Exceptions for "credprovider" folder in "credprovider" target */,
+			);
+			path = credprovider;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +115,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11C02E912DBFC3F400B036E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C02E972DBFC3F500B036E1 /* AuthenticationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +132,8 @@
 				11C02E5D2DBFB85000B036E1 /* testera */,
 				11C02E6F2DBFB85200B036E1 /* testeraTests */,
 				11C02E792DBFB85200B036E1 /* testeraUITests */,
+				11C02E982DBFC3F500B036E1 /* credprovider */,
+				11C02E952DBFC3F400B036E1 /* Frameworks */,
 				11C02E5C2DBFB85000B036E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +144,17 @@
 				11C02E5B2DBFB85000B036E1 /* testera.app */,
 				11C02E6C2DBFB85200B036E1 /* testeraTests.xctest */,
 				11C02E762DBFB85200B036E1 /* testeraUITests.xctest */,
+				11C02E942DBFC3F400B036E1 /* credprovider.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		11C02E952DBFC3F400B036E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11C02E962DBFC3F500B036E1 /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +167,12 @@
 				11C02E572DBFB85000B036E1 /* Sources */,
 				11C02E582DBFB85000B036E1 /* Frameworks */,
 				11C02E592DBFB85000B036E1 /* Resources */,
+				11C02EA72DBFC3F500B036E1 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				11C02EA12DBFC3F500B036E1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				11C02E5D2DBFB85000B036E1 /* testera */,
@@ -163,6 +230,28 @@
 			productReference = 11C02E762DBFB85200B036E1 /* testeraUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		11C02E932DBFC3F400B036E1 /* credprovider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11C02EA42DBFC3F500B036E1 /* Build configuration list for PBXNativeTarget "credprovider" */;
+			buildPhases = (
+				11C02E902DBFC3F400B036E1 /* Sources */,
+				11C02E912DBFC3F400B036E1 /* Frameworks */,
+				11C02E922DBFC3F400B036E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				11C02E982DBFC3F500B036E1 /* credprovider */,
+			);
+			name = credprovider;
+			packageProductDependencies = (
+			);
+			productName = credprovider;
+			productReference = 11C02E942DBFC3F400B036E1 /* credprovider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +273,9 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 11C02E5A2DBFB85000B036E1;
 					};
+					11C02E932DBFC3F400B036E1 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = 11C02E562DBFB85000B036E1 /* Build configuration list for PBXProject "testera" */;
@@ -203,6 +295,7 @@
 				11C02E5A2DBFB85000B036E1 /* testera */,
 				11C02E6B2DBFB85200B036E1 /* testeraTests */,
 				11C02E752DBFB85200B036E1 /* testeraUITests */,
+				11C02E932DBFC3F400B036E1 /* credprovider */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +316,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		11C02E742DBFB85200B036E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C02E922DBFC3F400B036E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +353,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11C02E902DBFC3F400B036E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +372,11 @@
 			isa = PBXTargetDependency;
 			target = 11C02E5A2DBFB85000B036E1 /* testera */;
 			targetProxy = 11C02E772DBFB85200B036E1 /* PBXContainerItemProxy */;
+		};
+		11C02EA12DBFC3F500B036E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11C02E932DBFC3F400B036E1 /* credprovider */;
+			targetProxy = 11C02EA02DBFC3F500B036E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -551,6 +663,63 @@
 			};
 			name = Release;
 		};
+		11C02EA52DBFC3F500B036E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = credprovider/credprovider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42523R379G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = credprovider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = credprovider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.sedlardavid.testera.credprovider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11C02EA62DBFC3F500B036E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = credprovider/credprovider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42523R379G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = credprovider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = credprovider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.sedlardavid.testera.credprovider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -586,6 +755,15 @@
 			buildConfigurations = (
 				11C02E872DBFB85200B036E1 /* Debug */,
 				11C02E882DBFB85200B036E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11C02EA42DBFC3F500B036E1 /* Build configuration list for PBXNativeTarget "credprovider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C02EA52DBFC3F500B036E1 /* Debug */,
+				11C02EA62DBFC3F500B036E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
